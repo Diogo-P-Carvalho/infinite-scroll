@@ -1,6 +1,6 @@
 # Infinite Scroll
 
-Using the Unsplash API to show infinite scroll functionality.
+Using the [Unsplash API](https://unsplash.com/documentation) to show infinite scroll functionality.
 <br>
 <a href="https://github.com/Diogo-P-Carvalho/infinite-scroll/blob/main/README.md"><strong>Explore the docs »</strong></a>
 
@@ -39,6 +39,7 @@ Using the Unsplash API to show infinite scroll functionality.
 
 -   Implement infinite scroll functionality
 -   Customized loading animation with [loading.io](https://loading.io/)
+-   Integration with [Unsplash API](https://unsplash.com/documentation)
 
 ### Built With
 
@@ -46,6 +47,7 @@ Using the Unsplash API to show infinite scroll functionality.
 -   CSS3
 -   Javascript
 -   Loading Animation
+-   Unsplash API
 
 <!-- GETTING STARTED -->
 
@@ -91,3 +93,4 @@ Diogo Carvalho - Portfolio Comming Soon - [Linkedin](www.linkedin.com/in/diogo-c
 -   [Github Pages](https://pages.github.com/)
 -   [Loading Animation](https://loading.io/)
 -   [Google Fonts](https://fonts.google.com/)
+-   [Unsplash API](https://unsplash.com/documentation)
