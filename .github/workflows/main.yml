@@ -9,5 +9,6 @@ jobs:
     steps:      
       # Runs a single command using the runners shell
       - name: Set up environment variables
+        run: echo "Working"
         env:
           UNSPLASH_API_KEY: ${{secrets.UNSPLASH_API_KEY}}
