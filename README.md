@@ -58,7 +58,8 @@ Using the [Unsplash API](https://unsplash.com/documentation) to show infinite sc
     git clone https://github.com/Diogo-P-Carvalho/infinite-scroll.git
     ```
 2. Get [Unsplash API](https://unsplash.com/documentation) key
-3. Run index.html file
+3. Replace to your api key
+4. Run index.html file
 
 <!-- ROADMAP -->
 
