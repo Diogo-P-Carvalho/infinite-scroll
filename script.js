@@ -10,13 +10,12 @@ let photosArray = [];
 
 // Unsplash API
 const initalCount = 5;
-console.log('process env', process.env)
-const apiKey = UNSPLASH_API_KEY;
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${initalCount}`
+const apiKey = `Client-ID BNXUmCN9MCPkIYEZM13LnttD3GazFyFqxWskz659HQg`;
+let apiUrl = `https://api.unsplash.com/photos/random/?count=${initalCount}`
 
 // Update api url with a new image count
 function updateApiUrlCount(newCount) {
-    apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${newCount}`
+    apiUrl = `https://api.unsplash.com/photos/random/?count=${newCount}`
 }
 
 // Check if all images were loaded
@@ -73,7 +72,9 @@ window.addEventListener('scroll', () => {
 // Get photos from unsplash api
 async function getPhotos() {
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(apiUrl, {
+            headers: {'Authorization': apiKey}
+        });
         photosArray = await response.json();
         displayPhotos();
         if (isInitialLoad) {
