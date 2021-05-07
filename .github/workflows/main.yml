@@ -1,14 +1,14 @@
 name: Environment Variables
 on: push
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:      
-      # Runs a single command using the runners shell
-      - name: Set up environment variables
-        run: echo "Working"
+    # This workflow contains a single job called "build"
+    build:
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
         env:
-          UNSPLASH_API_KEY: ${{secrets.UNSPLASH_API_KEY}}
+            UNSPLASH_API_KEY: ${{secrets.UNSPLASH_API_KEY}}
+        # Steps represent a sequence of tasks that will be executed as part of the job
+        steps:
+            # Runs a single command using the runners shell
+            - name: Set up environment variables
+              run: echo "Working"
